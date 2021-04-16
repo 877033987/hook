@@ -1,0 +1,27 @@
+https://open.rwork.crc.com.cn/open-apis/bot/hook/64af701bc53443188a84c88e2e311e44
+curl -X POST -H "Content-Type: application/json" \
+    -d '{"msg_type":"text","content":{"text":"request example"}}' \
+    https://open.rwork.crc.com.cn/open-apis/bot/hook/64af701bc53443188a84c88e2e311e44
+{
+    "msg_type": "post",
+    "content": {
+        "post": {
+            "zh_cn": {
+                "title": "项目更新通知",
+                "content": [
+                    [
+                        {
+                            "tag": "text",
+                            "text": "项目有更新: "
+                        },
+                        {
+                            "tag": "a",
+                            "text": "请查看",
+                            "href": "http://www.baidu.com/"
+                        }
+                    ]
+                ]
+            }
+        }
+    }
+} 
